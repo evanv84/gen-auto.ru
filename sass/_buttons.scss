@@ -1,0 +1,50 @@
+@import "variables";
+@import "mixins";
+
+.btn {
+	display: inline-block;
+	padding: 0.5em 2em;
+	background: #d53023;
+	color: $white;
+	  background-image: -webkit-linear-gradient(top, #d53023, #b8100c);
+	  background-image: -moz-linear-gradient(top, #d53023, #b8100c);
+	  background-image: -ms-linear-gradient(top, #d53023, #b8100c);
+	  background-image: -o-linear-gradient(top, #d53023, #b8100c);
+	  background-image: linear-gradient(to bottom, #d53023, #b8100c);
+	  -webkit-border-radius: 6;
+	  -moz-border-radius: 6;
+	  border-radius: 6px;
+	  -webkit-box-shadow: 0px 1px 3px #000;
+	  -moz-box-shadow: 0px 1px 3px #000;
+	  box-shadow: 0px 1px 3px #000;
+	border: solid #b30900 1px;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	text-decoration: none;
+	position: relative;
+	@include transition(0.5s);
+	&:hover {
+			background: #d53023;
+			background-image: -webkit-linear-gradient(top, #b8100c, #d53023);
+			background-image: -moz-linear-gradient(top, #b8100c, #d53023);
+			background-image: -ms-linear-gradient(top, #b8100c, #d53023);
+			background-image: -o-linear-gradient(top, #b8100c, #d53023);
+			background-image: linear-gradient(to bottom, #b8100c, #d53023);
+			border: solid #b30900 1px;
+			@include transition(0.5s);
+	}
+	@include breakpoint($tablet) {
+			width: 40%;
+			text-align: center;
+			margin-bottom: 1em;
+			padding: 0.5em;
+	}
+	@include breakpoint($phone) {
+				width: 80%;
+				text-align: center;
+				margin-bottom: 1em;
+				padding: 0.5em;
+				margin-right: auto;
+				margin-left: auto;
+	}
+}

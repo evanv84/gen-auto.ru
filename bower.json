@@ -1,0 +1,17 @@
+{
+  "name": "gen-auto.ru",
+  "authors": [
+    "i.i."
+  ],
+  "description": "body-shop",
+  "main": "",
+  "license": "MIT",
+  "homepage": "krem.guru",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
